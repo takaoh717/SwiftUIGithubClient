@@ -10,7 +10,7 @@ import Alamofire
 class UserRequest: BaseRequestProtocol {
 
     var parameters: Parameters? {
-        return nil
+        return ["q": "takao", "page": 0, "per_page": 20]
     }
 
     var method: HTTPMethod {
@@ -25,5 +25,5 @@ class UserRequest: BaseRequestProtocol {
         return false
     }
 
-    typealias ResponseType = [UserResponse]
+    typealias ResponseType = UserResponse
 }

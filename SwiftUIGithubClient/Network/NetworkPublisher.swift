@@ -46,7 +46,8 @@ struct NetworkPublisher {
                             } else {
                                 promise(.failure(APIError.unknown))
                             }
-                        } catch {
+                        } catch let e {
+                            print(e)
                             promise(.failure(APIError.jsonMapping))
                         }
                     case let .failure(error):

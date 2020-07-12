@@ -6,10 +6,16 @@
 //
 
 import SwiftUI
+import Combine
 
 struct ContentView: View {
+
+    @ObservedObject var observed = SearchUserViewModel()
+
     var body: some View {
-        Text("Hello, world!").padding()
+        NavigationView {
+            Text(observed.displayData?.items.first?.login ?? "none")
+        }.onAppear(perform: observed.onAppear)
     }
 }
 

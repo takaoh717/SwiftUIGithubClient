@@ -11,7 +11,7 @@ import Alamofire
 
 class SearchUserViewModel: ObservableObject {
 
-    @Published var displayData: [UserResponse] = []
+    @Published var displayData: UserResponse?
 
     var task: AnyCancellable? = nil
 

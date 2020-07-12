@@ -7,9 +7,21 @@
 
 import Foundation
 
-struct UserResponse: Codable, Identifiable {
-    let id: String
-    let userName: String
-    let avatarUrl: URL?
-    let htmlUrl: URL
+struct UserResponse: Codable {
+    let items: [GithubUser]
+
+    enum CodingKeys: String, CodingKey {
+        case items
+    }
+}
+
+struct GithubUser: Codable, Identifiable {
+    let id: Int
+    let login: String
+
+    enum CodingKeys: String, CodingKey {
+        case id
+        case login
+    }
+
 }
