@@ -14,6 +14,12 @@
 		DB4758EE24BAC86B00FD666B /* SwiftUIGithubClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4758ED24BAC86B00FD666B /* SwiftUIGithubClientTests.swift */; };
 		DB4758F924BAC86B00FD666B /* SwiftUIGithubClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4758F824BAC86B00FD666B /* SwiftUIGithubClientUITests.swift */; };
 		DB47590824BAD8FA00FD666B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DB47590724BAD8FA00FD666B /* Alamofire */; };
+		DB47590A24BAD99000FD666B /* BaseAPIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB47590924BAD99000FD666B /* BaseAPIProtocol.swift */; };
+		DB47590E24BADC6200FD666B /* NetworkPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB47590D24BADC6200FD666B /* NetworkPublisher.swift */; };
+		DB47591024BAE4A400FD666B /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB47590F24BAE4A400FD666B /* NetworkConstants.swift */; };
+		DB47591424BAE50900FD666B /* UserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB47591324BAE50900FD666B /* UserRequest.swift */; };
+		DB47591624BAE5B700FD666B /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB47591524BAE5B700FD666B /* UserResponse.swift */; };
+		DB47591A24BAE6CE00FD666B /* SearchUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB47591924BAE6CE00FD666B /* SearchUserViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +52,12 @@
 		DB4758F424BAC86B00FD666B /* SwiftUIGithubClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIGithubClientUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB4758F824BAC86B00FD666B /* SwiftUIGithubClientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIGithubClientUITests.swift; sourceTree = "<group>"; };
 		DB4758FA24BAC86B00FD666B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB47590924BAD99000FD666B /* BaseAPIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "\U0010BaseAPIProtocol.swift"; sourceTree = "<group>"; };
+		DB47590D24BADC6200FD666B /* NetworkPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkPublisher.swift; sourceTree = "<group>"; };
+		DB47590F24BAE4A400FD666B /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
+		DB47591324BAE50900FD666B /* UserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRequest.swift; sourceTree = "<group>"; };
+		DB47591524BAE5B700FD666B /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
+		DB47591924BAE6CE00FD666B /* SearchUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +109,10 @@
 		DB4758DA24BAC86A00FD666B /* SwiftUIGithubClient */ = {
 			isa = PBXGroup;
 			children = (
+				DB47590C24BADC4600FD666B /* View */,
+				DB47590B24BADC3900FD666B /* Network */,
 				DB4758DB24BAC86A00FD666B /* SwiftUIGithubClientApp.swift */,
-				DB4758DD24BAC86A00FD666B /* ContentView.swift */,
+				DB47591924BAE6CE00FD666B /* SearchUserViewModel.swift */,
 				DB4758DF24BAC86B00FD666B /* Assets.xcassets */,
 				DB4758E424BAC86B00FD666B /* Info.plist */,
 				DB4758E124BAC86B00FD666B /* Preview Content */,
@@ -130,6 +144,26 @@
 				DB4758FA24BAC86B00FD666B /* Info.plist */,
 			);
 			path = SwiftUIGithubClientUITests;
+			sourceTree = "<group>";
+		};
+		DB47590B24BADC3900FD666B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DB47590924BAD99000FD666B /* BaseAPIProtocol.swift */,
+				DB47590D24BADC6200FD666B /* NetworkPublisher.swift */,
+				DB47590F24BAE4A400FD666B /* NetworkConstants.swift */,
+				DB47591324BAE50900FD666B /* UserRequest.swift */,
+				DB47591524BAE5B700FD666B /* UserResponse.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		DB47590C24BADC4600FD666B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DB4758DD24BAC86A00FD666B /* ContentView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,7 +302,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB4758DE24BAC86A00FD666B /* ContentView.swift in Sources */,
+				DB47590E24BADC6200FD666B /* NetworkPublisher.swift in Sources */,
+				DB47591424BAE50900FD666B /* UserRequest.swift in Sources */,
+				DB47591024BAE4A400FD666B /* NetworkConstants.swift in Sources */,
+				DB47591624BAE5B700FD666B /* UserResponse.swift in Sources */,
+				DB47591A24BAE6CE00FD666B /* SearchUserViewModel.swift in Sources */,
 				DB4758DC24BAC86A00FD666B /* SwiftUIGithubClientApp.swift in Sources */,
+				DB47590A24BAD99000FD666B /* BaseAPIProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
