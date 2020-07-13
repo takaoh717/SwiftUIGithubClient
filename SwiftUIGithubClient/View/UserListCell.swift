@@ -25,7 +25,7 @@ struct UserListCell: View {
             Text(name)
             Spacer()
             if let imageData = self.imageDownloader.downloadData, let image = UIImage(data: imageData) {
-                Image(uiImage: image).resizable().frame(width: 30, height: 30, alignment: .center).aspectRatio(contentMode: .fit).cornerRadius(10)
+                Image(uiImage: image).resizable().frame(width: 30, height: 30, alignment: .center).aspectRatio(contentMode: .fit).cornerRadius(15)
             }
         }
     }

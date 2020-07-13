@@ -16,11 +16,13 @@ struct UsersListView: View {
         NavigationView {
             if let items = observed.displayData?.items {
                 List(items) { item in
-                    UserListCell(name: item.login, imageUrl: item.avatarUrl)
-                }
+                    NavigationLink(destination: UserDetailView(item: item), label: {
+                        UserListCell(name: item.login, imageUrl: item.avatarUrl)
+                    })
+                }.navigationBarTitle("Users")
             } else {
                 Text("empty")
             }
-        }.navigationBarTitle("Users").onAppear(perform: observed.onAppear)
+        }.onAppear(perform: observed.onAppear)
     }
 }

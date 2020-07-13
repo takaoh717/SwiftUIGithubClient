@@ -19,8 +19,9 @@
 		DB47591424BAE50900FD666B /* UserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB47591324BAE50900FD666B /* UserRequest.swift */; };
 		DB47591624BAE5B700FD666B /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB47591524BAE5B700FD666B /* UserResponse.swift */; };
 		DB47591A24BAE6CE00FD666B /* SearchUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB47591924BAE6CE00FD666B /* SearchUserViewModel.swift */; };
+		DB95DD1124BC4FE7004CC943 /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB95DD1024BC4FE7004CC943 /* UserDetailView.swift */; };
 		DBE734CF24BC0E730056E014 /* ImageDownloder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE734CE24BC0E730056E014 /* ImageDownloder.swift */; };
-		DBE734D124BC13250056E014 /* GithubUsersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE734D024BC13250056E014 /* GithubUsersListView.swift */; };
+		DBE734D124BC13250056E014 /* UsersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE734D024BC13250056E014 /* UsersListView.swift */; };
 		DBE734D324BC13630056E014 /* UserListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE734D224BC13630056E014 /* UserListCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -59,8 +60,9 @@
 		DB47591324BAE50900FD666B /* UserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRequest.swift; sourceTree = "<group>"; };
 		DB47591524BAE5B700FD666B /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
 		DB47591924BAE6CE00FD666B /* SearchUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserViewModel.swift; sourceTree = "<group>"; };
+		DB95DD1024BC4FE7004CC943 /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
 		DBE734CE24BC0E730056E014 /* ImageDownloder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloder.swift; sourceTree = "<group>"; };
-		DBE734D024BC13250056E014 /* GithubUsersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubUsersListView.swift; sourceTree = "<group>"; };
+		DBE734D024BC13250056E014 /* UsersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListView.swift; sourceTree = "<group>"; };
 		DBE734D224BC13630056E014 /* UserListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -166,8 +168,9 @@
 		DB47590C24BADC4600FD666B /* View */ = {
 			isa = PBXGroup;
 			children = (
-				DBE734D024BC13250056E014 /* GithubUsersListView.swift */,
+				DBE734D024BC13250056E014 /* UsersListView.swift */,
 				DBE734D224BC13630056E014 /* UserListCell.swift */,
+				DB95DD1024BC4FE7004CC943 /* UserDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -316,7 +319,8 @@
 				DBE734D324BC13630056E014 /* UserListCell.swift in Sources */,
 				DB4758DC24BAC86A00FD666B /* SwiftUIGithubClientApp.swift in Sources */,
 				DB47590A24BAD99000FD666B /* BaseAPIProtocol.swift in Sources */,
-				DBE734D124BC13250056E014 /* GithubUsersListView.swift in Sources */,
+				DBE734D124BC13250056E014 /* UsersListView.swift in Sources */,
+				DB95DD1124BC4FE7004CC943 /* UserDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
