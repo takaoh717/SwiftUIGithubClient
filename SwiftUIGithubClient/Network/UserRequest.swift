@@ -10,7 +10,7 @@ import Alamofire
 class UserRequest: BaseRequestProtocol {
 
     var parameters: Parameters? {
-        return ["q": "takao", "page": 0, "per_page": 20]
+        return ["q": "a", "page": 0, "per_page": 20]
     }
 
     var method: HTTPMethod {

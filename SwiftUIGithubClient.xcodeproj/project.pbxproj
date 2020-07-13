@@ -20,6 +20,7 @@
 		DB47591424BAE50900FD666B /* UserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB47591324BAE50900FD666B /* UserRequest.swift */; };
 		DB47591624BAE5B700FD666B /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB47591524BAE5B700FD666B /* UserResponse.swift */; };
 		DB47591A24BAE6CE00FD666B /* SearchUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB47591924BAE6CE00FD666B /* SearchUserViewModel.swift */; };
+		DBE734CF24BC0E730056E014 /* ImageDownloder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE734CE24BC0E730056E014 /* ImageDownloder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		DB47591324BAE50900FD666B /* UserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRequest.swift; sourceTree = "<group>"; };
 		DB47591524BAE5B700FD666B /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
 		DB47591924BAE6CE00FD666B /* SearchUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserViewModel.swift; sourceTree = "<group>"; };
+		DBE734CE24BC0E730056E014 /* ImageDownloder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				DB4758DF24BAC86B00FD666B /* Assets.xcassets */,
 				DB4758E424BAC86B00FD666B /* Info.plist */,
 				DB4758E124BAC86B00FD666B /* Preview Content */,
+				DBE734CE24BC0E730056E014 /* ImageDownloder.swift */,
 			);
 			path = SwiftUIGithubClient;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBE734CF24BC0E730056E014 /* ImageDownloder.swift in Sources */,
 				DB4758DE24BAC86A00FD666B /* ContentView.swift in Sources */,
 				DB47590E24BADC6200FD666B /* NetworkPublisher.swift in Sources */,
 				DB47591424BAE50900FD666B /* UserRequest.swift in Sources */,

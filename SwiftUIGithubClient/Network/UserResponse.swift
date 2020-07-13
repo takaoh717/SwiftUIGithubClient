@@ -8,20 +8,14 @@
 import Foundation
 
 struct UserResponse: Codable {
+    let totalCount: Int
+    let incompleteResults: Bool
     let items: [GithubUser]
-
-    enum CodingKeys: String, CodingKey {
-        case items
-    }
 }
 
 struct GithubUser: Codable, Identifiable {
     let id: Int
     let login: String
-
-    enum CodingKeys: String, CodingKey {
-        case id
-        case login
-    }
-
+    let avatarUrl: String
+    let htmlUrl: String
 }

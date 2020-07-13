@@ -22,6 +22,7 @@ struct NetworkPublisher {
     private static let retryCount: Int = 1
     static let decoder: JSONDecoder = {
         let jsonDecoder = JSONDecoder()
+        // decode時にsnake_case -> camelCaseに変換
         jsonDecoder.keyDecodingStrategy = .convertFromSnakeCase
         return jsonDecoder
     } ()
