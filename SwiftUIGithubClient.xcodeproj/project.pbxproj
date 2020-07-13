@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		DB4758DC24BAC86A00FD666B /* SwiftUIGithubClientApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4758DB24BAC86A00FD666B /* SwiftUIGithubClientApp.swift */; };
-		DB4758DE24BAC86A00FD666B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4758DD24BAC86A00FD666B /* ContentView.swift */; };
 		DB4758E024BAC86B00FD666B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB4758DF24BAC86B00FD666B /* Assets.xcassets */; };
 		DB4758E324BAC86B00FD666B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB4758E224BAC86B00FD666B /* Preview Assets.xcassets */; };
 		DB4758EE24BAC86B00FD666B /* SwiftUIGithubClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4758ED24BAC86B00FD666B /* SwiftUIGithubClientTests.swift */; };
@@ -21,6 +20,8 @@
 		DB47591624BAE5B700FD666B /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB47591524BAE5B700FD666B /* UserResponse.swift */; };
 		DB47591A24BAE6CE00FD666B /* SearchUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB47591924BAE6CE00FD666B /* SearchUserViewModel.swift */; };
 		DBE734CF24BC0E730056E014 /* ImageDownloder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE734CE24BC0E730056E014 /* ImageDownloder.swift */; };
+		DBE734D124BC13250056E014 /* GithubUsersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE734D024BC13250056E014 /* GithubUsersListView.swift */; };
+		DBE734D324BC13630056E014 /* UserListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE734D224BC13630056E014 /* UserListCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +44,6 @@
 /* Begin PBXFileReference section */
 		DB4758D824BAC86A00FD666B /* SwiftUIGithubClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIGithubClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB4758DB24BAC86A00FD666B /* SwiftUIGithubClientApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIGithubClientApp.swift; sourceTree = "<group>"; };
-		DB4758DD24BAC86A00FD666B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DB4758DF24BAC86B00FD666B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB4758E224BAC86B00FD666B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DB4758E424BAC86B00FD666B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -60,6 +60,8 @@
 		DB47591524BAE5B700FD666B /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
 		DB47591924BAE6CE00FD666B /* SearchUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserViewModel.swift; sourceTree = "<group>"; };
 		DBE734CE24BC0E730056E014 /* ImageDownloder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloder.swift; sourceTree = "<group>"; };
+		DBE734D024BC13250056E014 /* GithubUsersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubUsersListView.swift; sourceTree = "<group>"; };
+		DBE734D224BC13630056E014 /* UserListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,7 +166,8 @@
 		DB47590C24BADC4600FD666B /* View */ = {
 			isa = PBXGroup;
 			children = (
-				DB4758DD24BAC86A00FD666B /* ContentView.swift */,
+				DBE734D024BC13250056E014 /* GithubUsersListView.swift */,
+				DBE734D224BC13630056E014 /* UserListCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -305,14 +308,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBE734CF24BC0E730056E014 /* ImageDownloder.swift in Sources */,
-				DB4758DE24BAC86A00FD666B /* ContentView.swift in Sources */,
 				DB47590E24BADC6200FD666B /* NetworkPublisher.swift in Sources */,
 				DB47591424BAE50900FD666B /* UserRequest.swift in Sources */,
 				DB47591024BAE4A400FD666B /* NetworkConstants.swift in Sources */,
 				DB47591624BAE5B700FD666B /* UserResponse.swift in Sources */,
 				DB47591A24BAE6CE00FD666B /* SearchUserViewModel.swift in Sources */,
+				DBE734D324BC13630056E014 /* UserListCell.swift in Sources */,
 				DB4758DC24BAC86A00FD666B /* SwiftUIGithubClientApp.swift in Sources */,
 				DB47590A24BAD99000FD666B /* BaseAPIProtocol.swift in Sources */,
+				DBE734D124BC13250056E014 /* GithubUsersListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
