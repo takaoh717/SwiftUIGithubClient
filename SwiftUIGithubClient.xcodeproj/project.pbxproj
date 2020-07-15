@@ -20,6 +20,9 @@
 		DB47591624BAE5B700FD666B /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB47591524BAE5B700FD666B /* UserResponse.swift */; };
 		DB47591A24BAE6CE00FD666B /* SearchUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB47591924BAE6CE00FD666B /* SearchUserViewModel.swift */; };
 		DB95DD1124BC4FE7004CC943 /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB95DD1024BC4FE7004CC943 /* UserDetailView.swift */; };
+		DB95DD1324BEF6F3004CC943 /* UserDetailRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB95DD1224BEF6F3004CC943 /* UserDetailRequest.swift */; };
+		DB95DD1524BEF74A004CC943 /* UserDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB95DD1424BEF74A004CC943 /* UserDetail.swift */; };
+		DB95DD1724BEF7C1004CC943 /* UserDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB95DD1624BEF7C1004CC943 /* UserDetailViewModel.swift */; };
 		DBE734CF24BC0E730056E014 /* ImageDownloder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE734CE24BC0E730056E014 /* ImageDownloder.swift */; };
 		DBE734D124BC13250056E014 /* UsersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE734D024BC13250056E014 /* UsersListView.swift */; };
 		DBE734D324BC13630056E014 /* UserListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE734D224BC13630056E014 /* UserListCell.swift */; };
@@ -61,6 +64,9 @@
 		DB47591524BAE5B700FD666B /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
 		DB47591924BAE6CE00FD666B /* SearchUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserViewModel.swift; sourceTree = "<group>"; };
 		DB95DD1024BC4FE7004CC943 /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
+		DB95DD1224BEF6F3004CC943 /* UserDetailRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailRequest.swift; sourceTree = "<group>"; };
+		DB95DD1424BEF74A004CC943 /* UserDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetail.swift; sourceTree = "<group>"; };
+		DB95DD1624BEF7C1004CC943 /* UserDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "\U0010UserDetailViewModel.swift"; sourceTree = "<group>"; };
 		DBE734CE24BC0E730056E014 /* ImageDownloder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloder.swift; sourceTree = "<group>"; };
 		DBE734D024BC13250056E014 /* UsersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListView.swift; sourceTree = "<group>"; };
 		DBE734D224BC13630056E014 /* UserListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListCell.swift; sourceTree = "<group>"; };
@@ -119,10 +125,11 @@
 				DB47590B24BADC3900FD666B /* Network */,
 				DB4758DB24BAC86A00FD666B /* SwiftUIGithubClientApp.swift */,
 				DB47591924BAE6CE00FD666B /* SearchUserViewModel.swift */,
+				DB95DD1624BEF7C1004CC943 /* UserDetailViewModel.swift */,
+				DBE734CE24BC0E730056E014 /* ImageDownloder.swift */,
 				DB4758DF24BAC86B00FD666B /* Assets.xcassets */,
 				DB4758E424BAC86B00FD666B /* Info.plist */,
 				DB4758E124BAC86B00FD666B /* Preview Content */,
-				DBE734CE24BC0E730056E014 /* ImageDownloder.swift */,
 			);
 			path = SwiftUIGithubClient;
 			sourceTree = "<group>";
@@ -161,6 +168,8 @@
 				DB47590F24BAE4A400FD666B /* NetworkConstants.swift */,
 				DB47591324BAE50900FD666B /* UserRequest.swift */,
 				DB47591524BAE5B700FD666B /* UserResponse.swift */,
+				DB95DD1224BEF6F3004CC943 /* UserDetailRequest.swift */,
+				DB95DD1424BEF74A004CC943 /* UserDetail.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -311,6 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBE734CF24BC0E730056E014 /* ImageDownloder.swift in Sources */,
+				DB95DD1724BEF7C1004CC943 /* UserDetailViewModel.swift in Sources */,
 				DB47590E24BADC6200FD666B /* NetworkPublisher.swift in Sources */,
 				DB47591424BAE50900FD666B /* UserRequest.swift in Sources */,
 				DB47591024BAE4A400FD666B /* NetworkConstants.swift in Sources */,
@@ -318,7 +328,9 @@
 				DB47591A24BAE6CE00FD666B /* SearchUserViewModel.swift in Sources */,
 				DBE734D324BC13630056E014 /* UserListCell.swift in Sources */,
 				DB4758DC24BAC86A00FD666B /* SwiftUIGithubClientApp.swift in Sources */,
+				DB95DD1524BEF74A004CC943 /* UserDetail.swift in Sources */,
 				DB47590A24BAD99000FD666B /* BaseAPIProtocol.swift in Sources */,
+				DB95DD1324BEF6F3004CC943 /* UserDetailRequest.swift in Sources */,
 				DBE734D124BC13250056E014 /* UsersListView.swift in Sources */,
 				DB95DD1124BC4FE7004CC943 /* UserDetailView.swift in Sources */,
 			);
