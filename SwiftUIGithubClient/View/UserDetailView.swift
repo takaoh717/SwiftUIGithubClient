@@ -9,20 +9,22 @@ import SwiftUI
 
 struct UserDetailView: View {
 
-    var item: GithubUser
+    var item: User
 
     @ObservedObject private var imageDownloader = ImageDownloader()
 
-    init(item: GithubUser) {
+    init(item: User) {
         self.item = item
         self.imageDownloader.downloadImage(url: item.avatarUrl)
     }
 
     var body: some View {
         VStack {
-            Text(item.login)
-            if let imageData = self.imageDownloader.downloadData, let image = UIImage(data: imageData) {
-                Image(uiImage: image).resizable().frame(width: 100, height: 100, alignment: .center).aspectRatio(contentMode: .fit).cornerRadius(50)
+            HStack {
+                if let imageData = self.imageDownloader.downloadData, let image = UIImage(data: imageData) {
+                    Image(uiImage: image).resizable().frame(width: 100, height: 100, alignment: .center).aspectRatio(contentMode: .fit).cornerRadius(50)
+                }
+                Text(item.login)
             }
             Text(item.htmlUrl)
         }

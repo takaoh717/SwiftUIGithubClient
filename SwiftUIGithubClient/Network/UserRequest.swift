@@ -9,8 +9,10 @@ import Alamofire
 
 class UserRequest: BaseRequestProtocol {
 
+    var keyword = ""
+
     var parameters: Parameters? {
-        return ["q": "a", "page": 0, "per_page": 20]
+        return ["q": keyword, "page": 0, "per_page": 20]
     }
 
     var method: HTTPMethod {
@@ -23,6 +25,10 @@ class UserRequest: BaseRequestProtocol {
 
     var allowsConstrainedNetworkAccess: Bool {
         return false
+    }
+
+    init(keyword: String) {
+        self.keyword = keyword
     }
 
     typealias ResponseType = UserResponse

@@ -10,10 +10,10 @@ import Foundation
 struct UserResponse: Codable {
     let totalCount: Int
     let incompleteResults: Bool
-    let items: [GithubUser]
+    let items: [User]
 }
 
-struct GithubUser: Codable, Identifiable {
+struct User: Codable, Identifiable {
     let id: Int
     let login: String
     let avatarUrl: String

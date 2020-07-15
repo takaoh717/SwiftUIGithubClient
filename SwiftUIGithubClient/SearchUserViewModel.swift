@@ -16,11 +16,11 @@ class SearchUserViewModel: ObservableObject {
     var task: AnyCancellable? = nil
 
     private(set) lazy var onAppear: () -> Void = { [weak self] in
-        self?.getUsers()
+        self?.getUsers(keyword: "a")
     }
 
-    func getUsers() {
-        self.task = NetworkPublisher.publish(UserRequest())
+    func getUsers(keyword: String) {
+        self.task = NetworkPublisher.publish(UserRequest(keyword: keyword))
             .receive(on: DispatchQueue.main)
             .sink(receiveCompletion: { completion in
                 switch completion {
